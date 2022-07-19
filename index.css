@@ -1,0 +1,74 @@
+.bor-radius {
+  z-index: 99;
+  border-radius: 11px;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: -14%;
+  height: fit-content;
+}
+.bor-radius h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.bor-radius h5 {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+/* .bor-right {
+  border-right: 1px rgb(221, 220, 220) solid;
+} */
+#ip-input {
+  font-size: 18px;
+  font-family: "Rubik", "Times New Roman", Times, serif;
+}
+
+.map-container {
+  position: relative;
+  height: 100vh;
+}
+
+.img-pattern {
+  height: auto;
+  max-width: 100%;
+}
+
+#map {
+  height: 100%;
+  position: sticky;
+}
+
+.heading-container {
+  background-image: url("./images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vh;
+}
+
+@media screen and (min-width: 760px) {
+  .bor-right {
+    border-right: 1px hsl(0, 0%, 59%) solid;
+  }
+  .bor-radius {
+    z-index: 99;
+    border-radius: 11px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: -13%;
+  }
+  .heading-container {
+    background-image: url("./images/pattern-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+  }
+  .map-container {
+    position: sticky;
+    height: 75vh;
+  }
+}
