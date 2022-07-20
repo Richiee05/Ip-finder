@@ -25,7 +25,7 @@ btn.addEventListener("click", (e) => {
   map.remove();
   e.preventDefault();
   try {
-    fetchIpData(`${url}${tirm(input.value)}`);
+    fetchIpData(`${url}${input.value.trim()}`);
   } catch (error) {
     console.log(error);
   }
@@ -35,7 +35,7 @@ form.addEventListener("submit", (e) => {
   map.remove();
   e.preventDefault();
   try {
-    fetchIpData(`${url}${tirm(input.value)}`);
+    fetchIpData(`${url}${input.value.trim()}`);
   } catch (error) {
     console.log(error);
   }
