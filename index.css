@@ -1,5 +1,9 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .bor-radius {
-  z-index: 99;
   border-radius: 11px;
   position: absolute;
   left: 5%;
@@ -29,7 +33,7 @@
 
 .map-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .img-pattern {
@@ -46,10 +50,10 @@
   background-image: url("./images/pattern-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 35vh;
+  height: 18.1rem;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
   .bor-right {
     border-right: 1px hsl(0, 0%, 59%) solid;
   }
@@ -59,13 +63,12 @@
     position: absolute;
     left: 5%;
     right: 5%;
-    top: -13%;
+    top: -8%;
   }
   .heading-container {
     background-image: url("./images/pattern-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vh;
   }
   .map-container {
     position: sticky;
